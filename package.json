@@ -5,8 +5,7 @@
   "main": "index.html",
   "dependencies": {
     "gulp": "^3.8.10",
-    "gulp-webserver": "^0.9.0",
-    "node-sass": "^2.0.0-beta"
+    "gulp-webserver": "^0.9.0"
   },
   "devDependencies": {},
   "scripts": {

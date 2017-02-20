@@ -1,0 +1,107 @@
+
+#stats{
+  background-color:#fafafa;
+  height:5%;
+  width:100%;
+  padding:2% 0 1% 0;
+  font-family: ComputerFont;
+  font-size: 24px;
+  color:#707070;
+
+  &>div{
+    display:inline-block;
+  }
+
+  &.win{
+    color: green;
+  }
+  &.loose{
+    color: red;
+  }
+}
+
+#new-game-btn{
+  float:right;
+  cursor:pointer;
+  margin-right:15px;
+  &:hover{
+    color: #b3b3b3;
+  }
+}
+
+.counter{
+  margin-left:15px;
+  i{
+    font-size: 45%;
+  }
+}
+
+#minefield {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  table-layout: fixed;
+  color:#000;
+}
+
+#minefield td {
+    overflow: hidden;
+    position: relative;
+}
+
+#minefield td:after {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+
+#minefield td > div {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 1px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #4286f4;
+    cursor: pointer;
+}
+
+#minefield td > div.open {
+    background: $ffffff;
+    border-color: #68f441;
+}
+
+#minefield td > div:hover {
+ background: #f4ee41;
+}
+
+#minefield td > div.unclickable:hover, #minefield td > div.open:hover {
+  border-width: initial;
+  cursor: default;
+}
+
+#minefield td > div.blown{
+  background: red;
+}
+
+#minefield i {
+    color: white;
+}
+
+.svgicon {
+  text-anchor: middle;
+  font-family: FontAwesome;
+  font-size: 18px;
+  text-shadow: #fff 0 0 3px;
+  fill: #808080;
+}
+
+.no-text-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
