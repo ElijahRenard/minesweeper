@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
     <!-- app css -->
     <link rel="stylesheet" href="css/minesweeper.css">
+    <!-- prettification css -->
+    <link rel="stylesheet" href="css/peerio.css">
 
     <!-- vendor js -->
     <script src="lib/angular/angular.min.js"></script>
@@ -29,11 +31,19 @@
 
     <div id="container" class="no-text-select" ng-controller="MainController" ng-cloak>
 
+      <header>
+        <nav>
+          <a  href="./index.html" ><img src="img/peerio-icon300.png" width="50" height="50"/><h1>Peerio's Minesweeper<h1></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
       <div id="stats" ng-class="{win: Game.gameWon === true, loose: Game.gameWon === false}">
         <div class="counter"><i class="fa fa-bomb"></i> {{Game.minesLeft}}</div>
         <div class="counter"><i class="fa fa-clock-o"></i> {{Game.timer}}</div>
         <div id="new-game-btn" ng-click="Game.startNewGame()">
-          <i ng-if="Game.gameWon === false" class="fa fa-frown-o"></i>
+          <i ng-if="Game.gameWon === false" class="fa fa-frown-o"> Game Over</i>
           <i ng-if="Game.gameWon !== false" class="fa fa-smile-o"></i>
         </div>
       </div>

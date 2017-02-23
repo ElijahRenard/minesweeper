@@ -1,0 +1,42 @@
+/* ==========================================================================
+Peerio Brand CSS
+
+I did not go far in the "making it any better department".
+
+So I began by copying the Peerio brand from the website onto Minesweeper.
+Add the header / title, got stuck in replicating the code to suddenly
+support mobile & desktop.
+
+Basically, once I would have finished the "rebranding" pass, I would have
+tackled making the grid smaller (so it is always visible within the given
+screen estate) then make it support mobile, because I think mobile is
+so important.
+========================================================================== */
+
+/*.nav-desktop li.logo-home {
+    background-image: url(img/peerio-icon300.png);
+    background-size: contain;
+    border: 0;
+    padding: 0;
+    height: 64px;
+    margin-right: 16px;
+    float: left;
+
+    width:100%;
+}*/
+
+body {
+  background-color: #2595D2;
+}
+
+a:active, a:link, a:visited, a:hover {
+  text-decoration: none;
+}
+
+h1{font-size:2em;margin:0.67em 0;}
+
+
+.nav-desktop li.logo-home{background-image:url("img/peerio-icon300.png");
+background-size:contain;border:0;padding:0;height:64px;margin-right:16px;float:left;
+width:100%;}
+.nav-desktop li.logo-home a{width:64px;padding:0;}
